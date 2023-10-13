@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-//visual studio can import the Header component for you
+//visual studio can import the Header component for you 
 import Content from './components/content';
-import Footer from './components/footer';
-import Header from './components/header';
+import Create from './components/create';
+import Read from './components/read';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
         </Navbar>
         <Routes>
           <Route path= '/' element= {<Content></Content>}></Route>
-          <Route path= '/read' element= {<Header></Header>}></Route>
-          <Route path= '/create' element= {<Footer></Footer>}></Route>
+          <Route path= '/read' element= {<Read></Read>}></Route>
+          <Route path= '/create' element= {<Create></Create>}></Route>
         </Routes>
       </div>
     </BrowserRouter>
@@ -36,3 +36,5 @@ function App() {
 }
 
 export default App;
+
+//lab 3 test
