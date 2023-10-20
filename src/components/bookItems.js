@@ -7,9 +7,9 @@ function BookItem(props) {
                 <Card.Header>{props.myBook.title}</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
-                    <img src={props.myBook.thumbnailUrl}></img> 
-                        <footer className="blockquote-footer">
-                        props.myBook.authors 
+                        <img src={props.myBook.thumbnailUrl}></img>
+                        <footer>
+                            {props.myBook.authors[0]}
                         </footer>
                     </blockquote>
                 </Card.Body>
@@ -19,7 +19,7 @@ function BookItem(props) {
             <img src={props.myBook.thumbnailUrl}></img>
             <p>{props.myBook.authors[0]}</p> */}
         </div>
-    )
+    );
 }
 
-export default { BookItem };
+export default  BookItem ;
