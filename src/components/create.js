@@ -9,7 +9,8 @@ function Create() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        
+        // Log the form input values
         console.log("Title: " + title +
             "Author: " + author +
             "Cover: " + cover);
